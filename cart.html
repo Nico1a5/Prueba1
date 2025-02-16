@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carrito de Compras</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="cart.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cart">
+            <h2>Tu Carrito</h2>
+            <div class="cart-container">
+                <ul id="cart-items">
+                    <!-- Los productos se agregarán dinámicamente aquí -->
+                </ul>
+                <div class="cart-summary">
+                    <h3>Resumen de la compra</h3>
+                    <div class="summary-details">
+                        <p>Subtotal: <span id="cart-subtotal">$0.00</span></p>
+                        <p>Envío: <span id="cart-shipping">$0.00</span></p>
+                        <p class="total">Total: <span id="cart-total">$0.00</span></p>
+                    </div>
+                    <button class="checkout-button" onclick="checkout()">Comprar seleccionados</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Tienda en Línea</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
