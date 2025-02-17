@@ -24,6 +24,7 @@ nav ul {
     background-color: #34495e;
     padding: 10px;
     border-radius: 8px;
+    flex-wrap: wrap; /* Nueva línea: permite que los elementos se envuelvan en pantallas pequeñas */
 }
 
 nav ul li {
@@ -194,6 +195,20 @@ footer {
     width: 100%;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    /* Cambia la cuadrícula de productos a una sola columna en móviles */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Cambia el menú de navegación a una columna en móviles */
+    nav ul {
+        flex-direction: column;
+    }
+}
+
 /* Estilos para la sección hero */
 .hero {
     background-image: url('assets/images/hero-bg.jpg'); /* Cambia por una imagen de fondo */
